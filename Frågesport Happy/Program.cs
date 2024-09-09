@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Diagnostics;
+using System.Xml.Serialization;
 
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -20,6 +21,9 @@ if (Startsvar == "ja" || Startsvar == "Ja")
    System.Console.WriteLine("Du kommer att få svara på 4 frågor. Om du svara rätt på alla vinner du 20000$!");
    System.Console.WriteLine("Fråga 1, Vad är en fluga? Är det en insekt, frukt eller ett land?");
    fråga1 = Console.ReadLine();
+}
+else if(Startsvar.ToLower() == "Nej"){
+   
 }
 
 if (fråga1.ToLower() == "en insekt")
