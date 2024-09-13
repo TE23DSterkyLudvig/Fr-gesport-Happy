@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Xml.Serialization;
+﻿
 
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -23,7 +22,7 @@ if (Startsvar == "ja" || Startsvar == "Ja")
    fråga1 = Console.ReadLine();
 }
 else if(Startsvar.ToLower() == "Nej"){
-   
+   Environment.Exit(0);
 }
 
 if (fråga1.ToLower() == "en insekt")
