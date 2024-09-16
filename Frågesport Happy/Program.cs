@@ -25,6 +25,7 @@ string fråga2 = "";
 string fråga3 = "";
 string fråga4 = "";
 string resultat = "";
+string igen = "";
 int fel = 0;
 int rätt = 0;
 
@@ -106,6 +107,15 @@ int rätt = 0;
    {
       System.Console.WriteLine($"Du fick {rätt} poäng rätt och {fel} poäng fel");
    }
+
+   System.Console.WriteLine("Vill du spela igen?");
+igen = Console.ReadLine();
+if(igen =="ja" || igen == "Ja"){
+spel();
+}
+else if(igen == "Nej" || igen == "nej"){
+   Environment.Exit(0);
+}
 
 
    
